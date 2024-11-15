@@ -5,7 +5,10 @@ import '../styles/Navbar.css';
 
 const Navbar = () => {
     return (
+
+      
         <nav className="navbar flex justify-between items-center px-8 py-4 bg-white text-black">
+
             <h1 className="navbar-logo font-outfit text-xl">UrbanNest</h1>
             <ul className="navbar-links flex list-none items-center ">
                 <li className='ml-5'>
