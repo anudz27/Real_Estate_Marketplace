@@ -8,6 +8,7 @@ const Navbar = () => {
     return (
 
         <nav className="navbar flex justify-between items-center px-8 py-4 bg-white text-black">
+
         <h1 className="navbar-logo font-outfit text-xl">UrbanNest</h1>
         <ul className="navbar-links flex justify-center items-center gap-12 w-full">
             <li className="ml-96"> 
@@ -35,6 +36,7 @@ const Navbar = () => {
         </ul>
     </nav>
     
+
     );
 };
 

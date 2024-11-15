@@ -1,5 +1,6 @@
 // src/components/SignUp.js
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'
 import authService from '../services/authService'; // Make sure this file exists
 import '../styles/SignUp.css'; // Styling file for your signup page
 
@@ -30,10 +31,10 @@ const SignUp = () => {
     };
 
     return (
-      <div className="flex items-center justify-center min-h-screen bg-gray-900">
-          <div className="w-full max-w-md bg-white p-8 rounded-lg shadow-lg">
+      <div className="flex items-center justify-center min-h-screen bg-gray-900 pt-10 ">
+          <div className="w-full max-w-md bg-white p-8 rounded-lg shadow-lg mb-8">
               <div className="flex justify-between items-center mb-4">
-                  <h2 className="text-2xl font-bold text-gray-800">Sign In</h2>
+                 <Link to ="/SignIn"> <h2 className="text-2xl font-bold text-black-500">Sign In</h2></Link>
                   <h2 className="text-2xl font-bold text-yellow-500">New Account</h2>
               </div>
               
@@ -90,16 +91,16 @@ const SignUp = () => {
               {/* Social Media Login */}
               <p className="text-center text-gray-500 mb-4">or connect with:</p>
               <div className="space-y-3">
-                  <button className="flex items-center justify-center w-full px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-100">
-                      <img src="https://img.icons8.com/color/24/000000/google-logo.png" alt="Google" className="mr-2" />
+                  <button className="flex items-center  w-full px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-100">
+                      <img className='mr-2 max-w-8' src="https://img.icons8.com/?size=100&id=V5cGWnc9R4xj&format=png&color=000000" alt="Google"  />
                       Continue with Google
                   </button>
-                  <button className="flex items-center justify-center w-full px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-100">
-                      <img src="https://img.icons8.com/color/24/000000/facebook.png" alt="Facebook" className="mr-2" />
+                  <button className="flex items-center  w-full px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-100 ">
+                      <img className='mr-2 max-w-8'  src="https://img.icons8.com/?size=100&id=114441&format=png&color=000000" alt="Facebook"  />
                       Continue with Facebook
                   </button>
-                  <button className="flex items-center justify-center w-full px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-100">
-                      <img src="https://img.icons8.com/ios-filled/50/000000/mac-os.png" alt="Apple" className="mr-2" />
+                  <button className="flex items-center   w-full px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-100">
+                      <img className='mr-2 max-w-8 justify-center' src="https://img.icons8.com/?size=100&id=30840&format=png&color=000000" alt="Apple" />
                       Continue with Apple
                   </button>
               </div>
