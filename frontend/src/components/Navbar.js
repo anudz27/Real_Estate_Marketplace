@@ -24,7 +24,11 @@ const Navbar = () => {
                     <Link to="/properties" className="text-black font-semibold font-outfit text-lg no-underline hover:text-[#FADC07]">Blog</Link>
                 </li>
                 <li className='ml-40'>
-                    <button className="bg-[#FADC07] text-black font-semibold font-outfit text-lg px-4 py-2 rounded-lg hover:bg-[#ffff]">Sign In</button>
+                <Link to="/signIn">
+            <button className="bg-[#FADC07] text-black font-semibold font-outfit text-lg px-4 py-2 rounded-lg hover:bg-[#ffff]">
+              Sign Up
+            </button>
+          </Link>
                    
                 </li>
             </ul>
