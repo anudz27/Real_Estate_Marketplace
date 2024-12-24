@@ -1,11 +1,16 @@
 import React from "react";
-import Home from '../../assets/images/home.jpg';
+import '../../styles/home.css';
+
+import homeImage from '../../assets/img/4.jpg';
 
 const Home = () => {
   return (
     <div>
       <div className="container">
-        <img src={Home} alt="Home" className="img-fluid" />
+        <img src={homeImage} alt="Home" className="img-home" />
+      </div>
+      <div className="container-home">
+
       </div>
     </div>
   );
