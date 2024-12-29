@@ -1,8 +1,5 @@
 // src/components/SignUp.js
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom'
-import authService from '../services/authService'; // Make sure this file exists
-import '../styles/SignUp.css'; // Styling file for your signup page
+
 
 const SignUp = () => {
     // State to store form inputs
@@ -34,8 +31,7 @@ const SignUp = () => {
       <div className="flex items-center justify-center min-h-screen bg-gray-900 pt-10 ">
           <div className="w-full max-w-md bg-white p-8 rounded-lg shadow-lg mb-8">
               <div className="flex justify-between items-center mb-4">
-                 <Link to ="/SignIn"> <h2 className="text-2xl font-bold text-black-500">Sign In</h2></Link>
-                  <h2 className="text-2xl font-bold text-yellow-500">New Account</h2>
+
               </div>
               
               <hr className="border-gray-300 my-4" />
@@ -109,5 +105,4 @@ const SignUp = () => {
   );
 }
 
-export default SignUp;
 
