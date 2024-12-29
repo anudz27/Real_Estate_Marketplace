@@ -2,6 +2,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Navbar.css';
+import Blog from '../pages/Blog';
+
 
 const Navbar = () => {
     return (
@@ -21,7 +23,7 @@ const Navbar = () => {
                     <Link to="/login" className="text-black font-semibold font-outfit text-lg no-underline hover:text-[#FADC07]">Agent</Link>
                 </li>
                 <li className='ml-5 '>
-                    <Link to="/properties" className="text-black font-semibold font-outfit text-lg no-underline hover:text-[#FADC07]">Blog</Link>
+                    <Link to='/Blog' className="text-black font-semibold font-outfit text-lg no-underline hover:text-[#FADC07]">Blog</Link>
                 </li>
                 <li className='ml-40'>
                 <Link to="/signIn">
