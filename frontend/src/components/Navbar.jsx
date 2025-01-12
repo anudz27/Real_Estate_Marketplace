@@ -10,7 +10,7 @@ const Navbar = () => {
     <nav className="navbar h-[10vh] flex justify-between items-center bg-white text-black px-6 lg:px-24 ">
       {/* Logo Section */}
       <div className="navbar-logo flex items-center">
-        <Link to="/">
+        <Link to="/Home">
           <h1 className="font-outfit text-3xl">UrbanNest</h1>
         </Link>
       </div>
