@@ -20,7 +20,7 @@ function App() {
       <Route path="/SignInForm" element={<SignInForm/>} />
     
       <Route path="/Header" element={<Header/>} />
-      <Route path="/Home" element={<Home/>} />
+      <Route path="/" element={<Home/>} />
     </Routes>
 
      

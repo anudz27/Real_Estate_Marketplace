@@ -1,13 +1,12 @@
 import React from "react";
 import "../styles/header.css"; // Ensure this path is correct
-// import HImg from "../assets/img/4.jpg"; 
+import HImg from "../assets/img/4.jpg"; 
 
 const Header = () => {
   return (
-    <section
-      className="header w-full h-auto"
+    <section className="header w-full h-auto border-r-8 mx-10 h-fit" id="main_header"
     >
-      <div className="container">
+      <div className="container m-auto  text-center flex justify-between items-center">
         <form action="" className="">
           <div className="box">
             <span>City</span>
@@ -24,7 +23,7 @@ const Header = () => {
           <button className="btn">Search</button>
         </form>
       </div>
-      <h1 className="text-4xl font-outfit font-normal text-[#FADC07]">
+      <h1 className="text-4xl font-outfit font-normal text-[#FADC07] m-auto text-center">
         Find Your Dream <span className="font-semibold">Property</span>,<br />
         Wherever You Are
       </h1>
