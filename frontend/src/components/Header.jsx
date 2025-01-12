@@ -1,13 +1,14 @@
 import React from "react";
 import "../styles/header.css"; // Ensure this path is correct
-// import HImg from "../assets/img/4.jpg"; 
+import HImg from "../assets/img/4.jpg"; 
 
 const Header = () => {
   return (
     <section
-      className="header w-full h-auto"
+      className="header w-full " id="header"
     >
-      <div className="container">
+      <div className="container back"   >
+      
         <form action="" className="">
           <div className="box">
             <span>City</span>
@@ -15,6 +16,7 @@ const Header = () => {
           </div>
           <div className="box">
             <span>Property Type</span>
+            
             <input type="text" placeholder="Property Type" />
           </div>
           <div className="box">
