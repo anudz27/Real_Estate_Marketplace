@@ -87,14 +87,18 @@ const Navbar = () => {
         </li>
         <li className="p-4 border-b lg:border-none">
           <Link
-            to="/properties"
+
+            to="/blog"
+
             className="text-black no-underline hover:text-[#FADC07]"
           >
             Blog
           </Link>
         </li>
         <li className="p-4 ml-auto lg:border-none">
-          <Link to="/signUp">
+
+          <Link to="/SignInForm">
+
             <button className="bg-[#FADC07] text-black px-4 py-2 rounded-lg hover:bg-white hover:text-[#FADC07] transition">
               Sign Up
             </button>
@@ -106,3 +110,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

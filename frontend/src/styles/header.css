@@ -1,5 +1,9 @@
-section{
-   
-    background-image: url("../assets/img/4.jpg");
-   
+
+section {
+
+        background-image: url("../assets/a.jpg");
+        background-color: #cccccc;
+        height: fit-content;
+      
+
 }

@@ -7,6 +7,9 @@ import SignInForm from "./components/SignIn";
 import Home from './pages/home/home';
 import Header from "./components/Header";
 
+import Blog from "./pages/Blog";
+
+
 
 function App() {
   return (
@@ -21,6 +24,9 @@ function App() {
     
       <Route path="/Header" element={<Header/>} />
       <Route path="/Home" element={<Home/>} />
+
+      <Route path="/Blog" element={<Blog/>}/>
+
     </Routes>
 
      

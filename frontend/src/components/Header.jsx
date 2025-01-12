@@ -4,9 +4,13 @@ import HImg from "../assets/img/4.jpg";
 
 const Header = () => {
   return (
-    <section className="header w-full h-auto border-r-8 mx-10 h-fit" id="main_header"
+
+    <section
+      className="header w-full " id="header"
     >
-      <div className="container m-auto  text-center flex justify-between items-center">
+      <div className="container back"   >
+      
+
         <form action="" className="">
           <div className="box">
             <span>City</span>
@@ -14,6 +18,7 @@ const Header = () => {
           </div>
           <div className="box">
             <span>Property Type</span>
+            
             <input type="text" placeholder="Property Type" />
           </div>
           <div className="box">
