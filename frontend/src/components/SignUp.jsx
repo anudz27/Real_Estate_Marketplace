@@ -1,5 +1,8 @@
 // src/components/SignUp.js
-
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import authService from '../services/authService';
 
 const SignUp = () => {
     // State to store form inputs
@@ -104,5 +107,6 @@ const SignUp = () => {
       </div>
   );
 }
+export default SignUp;
 
 
