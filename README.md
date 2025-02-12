@@ -7,54 +7,6 @@ This repository contains the source code for a Real state market place System we
 
 <br>
 
-
-
-
-## Table of Contents
-
-- [Installation](#installation)
-- [Project Structure](#project-structure)
-
-<br>
-
-## Installation
-
-To set up the project locally, follow these steps:
-
-**1. Clone the repository:**
-
-
-
-```bash
-https://github.com/anudz27/Real_Estate_Marketplace
-```
-
-**2. Install dependencies for the frontend and backend:**
-
-```bash
-cd client
-npm install
-
-cd server
-npm install
-```
-
-**3. Set up MongoDB:**
-
-- Create a MongoDB database and configure the connection in server/utils/db.js.
-
-**4. Run the development server:**
-
-```bash
-cd client
-npm run dev
-
-cd server
-npm run dev
-```
-
-<br>
-
 ## Project Structure
 
 The project structure is organized as follows:
