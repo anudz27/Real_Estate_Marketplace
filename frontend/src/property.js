@@ -10,7 +10,8 @@ export const properties = [
     image:image1,
     bathroom_amount:4,
     price_range:'Rs 2,000,000 - Rs 5,000,000',
-    address:'Colombo 7'
+    address:'Colombo 7',
+    slug:'House-1'
 },
 
 {
@@ -20,7 +21,8 @@ export const properties = [
     image:image2,
     bathroom_amount:4,
     price_range:'Rs 2,000,000 - Rs 5,000,000',
-    address:'Colombo 7'
+    address:'Colombo 7',
+     slug:'House-2'
 },
 
 {
@@ -30,6 +32,9 @@ export const properties = [
     image:image3,
     bathroom_amount:4,
     price_range:'Rs 2,000,000 - Rs 5,000,000',
-    address:'Colombo 7'
+    address:'Colombo 7',
+     slug:'House-3'
 }
 ];
+
+ 
