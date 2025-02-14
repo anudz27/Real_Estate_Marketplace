@@ -9,6 +9,9 @@ import Header from "./components/Header";
 
 import Blog from "./pages/Blog";
 import Search from "./components/search";
+import properties from "./property";
+import PropertyCart from './components/propertyCart';
+import PropertiesCards  from "./components/propertiesCards";
 
 
 
@@ -30,6 +33,10 @@ function App() {
 
       <Route path="/Blog" element={<Blog/>}/>
       <Route path="/Search" element={<Search/>}/>
+      <Route path="/properties" element={<properties/>}/>
+      <Route path="/PropertyCart" element={<PropertyCart/>}/>
+      <Route path="/PropertiesCards" element={<PropertiesCards/>}/>
+
 
     </Routes>
 
