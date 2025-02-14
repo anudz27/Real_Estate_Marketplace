@@ -1,6 +1,7 @@
 import React from "react";
 
 import Header from '../../components/Header'; 
+import Search from '../../components/search';
 
 
 
@@ -9,6 +10,7 @@ const Home = () => {
     
     <>
       <Header/>
+     
     </>
     // <div>
     //   <div className="container block border  w-11/12 mx-auto my-auto">

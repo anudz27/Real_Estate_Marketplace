@@ -8,6 +8,7 @@ import Home from './pages/home/home';
 import Header from "./components/Header";
 
 import Blog from "./pages/Blog";
+import Search from "./components/search";
 
 
 
@@ -28,6 +29,7 @@ function App() {
       <Route path="/" element={<Home/>} />
 
       <Route path="/Blog" element={<Blog/>}/>
+      <Route path="/Search" element={<Search/>}/>
 
     </Routes>
 
