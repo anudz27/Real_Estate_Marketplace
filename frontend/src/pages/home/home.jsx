@@ -1,8 +1,9 @@
 import React from "react";
-
+import Navbar from '../../components/Navbar';
 import Header from '../../components/Header'; 
 import Search from '../../components/search';
 import PropertiesCards from '../../components/propertiesCards';
+import Topics from "../../components/topics";
 
 
 
@@ -10,8 +11,10 @@ const Home = () => {
   return (
     
     <>
+     <Navbar/>
       <Header/>
       <PropertiesCards/>
+      <Topics/>
      
     </>
     // <div>

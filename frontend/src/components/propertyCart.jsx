@@ -12,11 +12,11 @@ const PropertyCart = ({ data }) => {
                 <img src={image} alt={propery_type} className="w-full h-56 object-cover rounded-lg drop-shadow-lg" />
             </Link>
 
-            <h3 className="text-2xl py-3 font-semibold text-gray-800">{propery_type}</h3>
+            <h3 className="text-2xl py-1 font-semibold text-gray-800">{propery_type}</h3>
 
-            <div className="flex justify-between items-center py-2">
+            <div className="flex justify-between items-center py-1">
                 <p className="text-lg text-gray-700 font-semibold">
-                    <span className="text-[#271175] text-2xl font-bold">${price_range}</span>
+                    <span className="text-[#271175] text-2xl font-bold">{price_range}</span>
                 </p>
             </div>
 
