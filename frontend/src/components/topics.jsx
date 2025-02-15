@@ -8,7 +8,7 @@ const Topics = () => {
             <h1 className='text-4xl font-outfit font-semibold mt-20 text-center tracking-widest'>  Explore Topics </h1>
             <h1 className='text-2xl font-outfit font-medium mt-10 text-center tracking-widest'> Explore expert advice, market trends, and home-buying tips to make informed decisions. </h1> 
         
-            <button className="btn p-2 col-span-1 md:col-span-4 mt-10 mb-20 bg-yellow-400 text-black font-bold py-2 px-4 rounded-md hover:bg-yellow-500">
+            <button className="btn p-2 col-span-1 md:col-span-4 mt-10 mb-20 bg-yellow-400 text-black font-semibold py-3 px-8 rounded-md hover:bg-yellow-500">
                 Read More Article
             </button>
         

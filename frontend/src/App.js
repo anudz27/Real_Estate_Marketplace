@@ -13,6 +13,7 @@ import PropertyCart from './components/propertyCart';
 import PropertiesCards  from "./components/propertiesCards";
 import Topics from './components/topics';
 import Footer from './components/footer';
+import Service from "./components/service";
 
 
 function App() {
@@ -32,8 +33,7 @@ function App() {
       <Route path="/PropertiesCards" element={<PropertiesCards/>}/>
       <Route path="/Topics" element={<Topics/>}/>
       <Route path="/Footer" element={<Footer/>}/>
-
-
+      <Route path="/Service" element={<Service/>}/>
 
 
 

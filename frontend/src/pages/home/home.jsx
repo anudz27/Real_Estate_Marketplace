@@ -5,7 +5,7 @@ import Search from '../../components/search';
 import PropertiesCards from '../../components/propertiesCards';
 import Topics from "../../components/topics";
 import Footer from "../../components/footer";
-;
+import Service from "../../components/service";
 
 
 const Home = () => {
@@ -16,6 +16,7 @@ const Home = () => {
       <Header/>
       <PropertiesCards/>
       <Topics/>
+      <Service/>
       <Footer/>
      
     </>
