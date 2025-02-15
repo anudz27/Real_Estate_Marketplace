@@ -1,17 +1,22 @@
 import React from "react";
-
+import Navbar from '../../components/Navbar';
 import Header from '../../components/Header'; 
 import Search from '../../components/search';
 import PropertiesCards from '../../components/propertiesCards';
-
+import Topics from "../../components/topics";
+import Footer from "../../components/footer";
+;
 
 
 const Home = () => {
   return (
     
     <>
+     <Navbar/>
       <Header/>
       <PropertiesCards/>
+      <Topics/>
+      <Footer/>
      
     </>
     // <div>
