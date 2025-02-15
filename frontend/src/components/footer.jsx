@@ -58,7 +58,7 @@ const Footer = () => {
 
                     <p className='mt-4 text-gray-400'>Send your messsage</p>
                     <input type='email' placeholder='Enter your message' className='mt-2 p-2 w-full bg-gray-800 text-white rounded' />
-                    <button className='mt-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded'>Send</button>
+                    <button className='mt-2 px-4 py-2 bg-yellow-400 hover:bg-yellow-500 rounded text-black font-semibold'>Send</button>
                 </div>
             </div>
 

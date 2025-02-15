@@ -49,7 +49,7 @@ const search = () => {
   </div>
   <div className="box">
     <button
-      className="btn w-full p-2 col-span-1 md:col-span-4 bg-yellow-400 text-white font-bold py-2 px-4 rounded-md hover:bg-yellow-500"
+      className="btn w-full p-2 col-span-1 md:col-span-4 bg-yellow-400 text-black font-bold py-2 px-4 rounded-md hover:bg-yellow-500"
     >
       Search
     </button>
