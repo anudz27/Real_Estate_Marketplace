@@ -69,17 +69,7 @@ const SignUp = () => {
                       </p>
                   </div>
 
-                  {/* User Type Checkbox */}
-                  <div className="flex items-center space-x-4">
-                      <label className="flex items-center text-gray-800">
-                          <input type="checkbox" className="mr-2" />
-                          Seller
-                      </label>
-                      <label className="flex items-center text-gray-800">
-                          <input type="checkbox" className="mr-2" />
-                          Buyer
-                      </label>
-                  </div>
+            
 
                   {/* Submit Button */}
                   <button className="w-full py-2 bg-black text-white rounded-lg font-semibold text-lg hover:bg-gray-800">
