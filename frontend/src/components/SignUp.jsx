@@ -1,34 +1,36 @@
 // src/components/SignUp.js
 
 import { Link } from 'react-router-dom'
-import authService from '../services/authService'; // Adjust the path as needed
+import auth from '../configuration/firbaseConfig'; // Adjust the path as needed
 import '../styles/SignUp.css'; // Styling file for your signup page
-import React, { useState } from 'react';
+import { useState } from "react";   
+import { createUserWithEmailAndPassword } from 'firebase/auth';
 
 
 const SignUp = () => {
     // State to store form inputs
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        password: ''
-    });
-    const [message, setMessage] = useState('');
+   const[email,setEmail]=useState("");  
+   const[name,setName]=useState("");
+   const[password,setPassword]=useState("");
+
+ 
 
     // Update formData state on input change
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData({ ...formData, [name]: value });
-    };
+    // const handleChange = (e) => {
+    //     const { name, value } = e.target;
+    //     setFormData({ ...formData, [name]: value });
+    // };
 
     // Handle form submission
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await authService.register(formData);
-            setMessage(response.data.message); // Show success message
+            const user = await createUserWithEmailAndPassword(auth, email, name,password)
+          
+         console.log(user);
+         console.log("User Registered Successfully");
         } catch (error) {
-            setMessage(error.response?.data.message || 'Error registering user');
+            console.error(error);
         }
     };
 
@@ -42,7 +44,7 @@ const SignUp = () => {
               
               <hr className="border-gray-300 my-4" />
 
-              <form className="space-y-6">
+              <form className="space-y-6" >
                   {/* Email Input */}
                   <div>
                       <label className="block text-sm font-medium text-gray-800">Email</label>
@@ -50,6 +52,17 @@ const SignUp = () => {
                           type="email"
                           placeholder="Enter email"
                           className="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"
+                          onChange={(e)=>setEmail(e.target.value)} required
+                      />
+                  </div>
+
+                  <div>
+                      <label className="block text-sm font-medium text-gray-800">Name</label>
+                      <input
+                          type="text"
+                          placeholder="Enter Name"
+                          className="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"
+                          onChange={(e)=>setName(e.target.value)} required
                       />
                   </div>
 
@@ -60,6 +73,7 @@ const SignUp = () => {
                           type="password"
                           placeholder="Create Password"
                           className="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg bg-gray-100 focus:outline-none focus:border-blue-500"
+                            onChange={(e)=>setPassword(e.target.value)} required
                       />
                       <p className="mt-2 text-xs text-gray-500">
                           At least 8 characters<br />
@@ -72,7 +86,9 @@ const SignUp = () => {
             
 
                   {/* Submit Button */}
-                  <button className="w-full py-2 bg-black text-white rounded-lg font-semibold text-lg hover:bg-gray-800">
+                  <button className="w-full py-2 bg-black text-white rounded-lg font-semibold text-lg hover:bg-gray-800"
+                  onClick={handleSubmit}
+                  >
                       Sign Up
                   </button>
               </form>
@@ -83,15 +99,15 @@ const SignUp = () => {
               {/* Social Media Login */}
               <p className="text-center text-gray-500 mb-4">or connect with:</p>
               <div className="space-y-3">
-                  <button className="flex items-center  w-full px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-100">
+                  <button className="flex justify-center items-center  w-full px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-100">
                       <img className='mr-2 max-w-8' src="https://img.icons8.com/?size=100&id=V5cGWnc9R4xj&format=png&color=000000" alt="Google"  />
                       Continue with Google
                   </button>
-                  <button className="flex items-center  w-full px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-100 ">
+                  <button className="flex items-center justify-center w-full px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-100 ">
                       <img className='mr-2 max-w-8'  src="https://img.icons8.com/?size=100&id=114441&format=png&color=000000" alt="Facebook"  />
                       Continue with Facebook
                   </button>
-                  <button className="flex items-center   w-full px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-100">
+                  <button className="flex justify-center items-center   w-full px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-100">
                       <img className='mr-2 max-w-8 justify-center' src="https://img.icons8.com/?size=100&id=30840&format=png&color=000000" alt="Apple" />
                       Continue with Apple
                   </button>
