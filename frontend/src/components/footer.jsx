@@ -6,7 +6,7 @@ import Whatsapp from '../assets/img/whatsapp.png';
 
 const Footer = () => {
     return (
-        <footer className='container mx-auto my-20 px-12 bg-black text-white w-11/12 rounded-2xl p-8'>
+        <footer className='container mx-auto my-10 px-12 bg-black text-white w-11/12 rounded-2xl p-8'>
             <div className='grid md:grid-cols-4 gap-10 text-center md:text-left'>
 
                 {/* Column 1 - Company Info */}
