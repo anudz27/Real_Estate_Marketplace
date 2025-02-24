@@ -1,9 +1,15 @@
-
-section {
-
-        background-image: url("../assets/a.jpg");
-        background-color: #cccccc;
-        height: fit-content;
-      
-
+.header {
+    background-image: url("../assets/img/4.jpg");
+    
+    background-size: cover; /* Ensures the image covers the section */
+    background-position: center; /* Centers the image */
+    width: 80%; /* Adjust width as needed */
+    margin: 0 auto; /* Centers the section horizontally */
+    height: fit-content;
+    border-radius: 40px; /* Rounds the corners */
+    padding: 20px; /* Adds spacing inside the section */
+    display: flex; /* Enables flexbox for content alignment */
+    justify-content: center; /* Horizontally centers the content */
+    align-items: center; /* Vertically centers the content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for better appearance */
 }
