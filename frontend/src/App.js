@@ -3,7 +3,7 @@ import React from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Navbar from './components/Navbar';
 import SignUp from "./components/SignUp";
-import SignInForm from "./components/SignIn";
+import SignInForm from "./components/signIn.jsx";
 import Home from './pages/home/home';
 import Header from "./components/Header";
 import Blog from "./pages/Blog";
