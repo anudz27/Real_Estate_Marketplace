@@ -10,7 +10,7 @@ const Navbar = () => {
     <nav className="navbar h-[10vh] flex justify-between items-center bg-white text-black px-6 lg:px-24 ">
       {/* Logo Section */}
       <div className="navbar-logo flex items-center">
-        <Link to="/Home">
+        <Link to="/">
           <h1 className="font-outfit text-3xl">UrbanNest</h1>
         </Link>
       </div>
@@ -87,14 +87,18 @@ const Navbar = () => {
         </li>
         <li className="p-4 border-b lg:border-none">
           <Link
+
             to="/blog"
+
             className="text-black no-underline hover:text-[#FADC07]"
           >
             Blog
           </Link>
         </li>
         <li className="p-4 ml-auto lg:border-none">
+
           <Link to="/SignInForm">
+
             <button className="bg-[#FADC07] text-black px-4 py-2 rounded-lg hover:bg-white hover:text-[#FADC07] transition">
               Sign Up
             </button>
