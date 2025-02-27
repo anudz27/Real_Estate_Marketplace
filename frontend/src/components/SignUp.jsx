@@ -1,10 +1,9 @@
 // src/components/SignUp.js
 
-import { Link } from 'react-router-dom'
-import auth from '../configuration/firbaseConfig'; // Adjust the path as needed
+import { Link } from 'react-router-dom';
 import '../styles/SignUp.css'; // Styling file for your signup page
 import { useState } from "react";   
-import { createUserWithEmailAndPassword } from 'firebase/auth';
+
 
 
 const SignUp = () => {
@@ -25,10 +24,7 @@ const SignUp = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const user = await createUserWithEmailAndPassword(auth, email, name,password)
-          
-         console.log(user);
-         console.log("User Registered Successfully");
+           
         } catch (error) {
             console.error(error);
         }
